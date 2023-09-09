@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Information Form</title>
+</head>
+<style>
+    .btn-group button {
+  background-color: #4682B4; 
+  border: 	#4682B4; 
+  color: #FFDAB9; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  float: right; 
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; 
+}
+        table {
+            margin: 0 auto;
+        }
+        th {
+            font-size: 27px;
+        }
+        td {
+            font-size: 23px;
+            align-items: center;
+        }
+.user-image {
+            width: 60%; 
+	    float:right
+        }
+</style>
+
+<body style="background-color : powderblue;">
+<div class="btn-group">
+  <button onclick="window.location.href ='./index.html';">Home</button>
+    <h1>Information Form</h1>
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+         <div class="user-image">
+            <img src="./thank.jpg" alt="./thank.jpg">
+        </div>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+</body>
+</html>
